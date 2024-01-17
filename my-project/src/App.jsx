@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import NavBar from './components/NavBar'
+import NavMenu from './components/NavMenu'
 import Suggestions from './components/Suggestions'
 import Feedbacks from './components/FeedBacks'
 
@@ -11,7 +12,14 @@ function App() {
 
   return (
     <>
-      <NavBar />
+      <div className="nav-bar flex ">
+        <div className="">
+        <NavBar />
+        </div>
+        <div className="">
+        <NavMenu />
+        </div>
+      </div>
       <Suggestions />
       <Feedbacks />
       
