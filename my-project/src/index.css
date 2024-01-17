@@ -25,6 +25,10 @@ body {
   border-radius: 10px;
   background: #AD1FEA;
 }
+.MainDiv > div{
+  width: 223px;
+  height: 178px;   
+}
 .SUG{
   width: 100vw;
   background-color: #373F68;

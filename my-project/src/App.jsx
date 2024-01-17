@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <div className="nav-bar flex ">
+      <div className="nav-bar md:flex lg:flex-col  ">
         <div className="">
         <NavBar />
         </div>
