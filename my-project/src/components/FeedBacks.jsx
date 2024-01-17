@@ -1,8 +1,9 @@
 import React from "react";
+import AddButton from "./AddFeedBackBtn";
 export default function Feedbacks(){
     return(
-        <main>
-            <div className="">
+        <main className=" FEED flex-col justify-center items-center bg-white rounded-lg m-3">
+            <div className="mx-auto mt-10 ml-36 pt-10">
                 <svg xmlns="http://www.w3.org/2000/svg" width="102" height="108" viewBox="0 0 102 108" fill="none">
                 <g opacity="0.5">
                     <path d="M48.7304 15.5933C25.8219 15.5888 7.24564 34.2243 7.23536 57.2206C7.22507 80.2169 25.7846 98.8691 48.6932 98.8854C71.6017 98.9016 90.1875 80.2757 90.2095 57.2794C90.2222 46.228 85.8577 35.6248 78.0775 27.8058C70.2973 19.9867 59.7397 15.5933 48.7304 15.5933Z" stroke="#3A4374" stroke-width="1.04545" stroke-linecap="round" stroke-linejoin="round"/>
@@ -28,8 +29,11 @@ export default function Feedbacks(){
                 </g>
                 </svg>
             </div>
-            <h1>There is no feedback yet.</h1>
-            <p>Got a suggestion? Found a bug that needs to be squashed? We love hearing about new ideas to improve our app.</p>
+            <h1 className="mt-10 font-bold">There is no feedback yet.</h1>
+            <p className="m-10 md:w-1/2">Got a suggestion? Found a bug that needs to be squashed? We love hearing about new ideas to improve our app.</p>
+            <div className="pb-10">
+                <AddButton />
+            </div>
         </main>
     )
 }
