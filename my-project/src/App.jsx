@@ -16,7 +16,7 @@ function App() {
         <div className="">
         <NavBar />
         </div>
-        <div className="">
+        <div className="md:mt-5">
         <NavMenu />
         </div>
       </div>
