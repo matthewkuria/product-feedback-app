@@ -18,10 +18,14 @@ export default function Suggestions(){
                 <p className="font-bold mx-3">0 Suggestions</p>
             </div>
             <div className="flex items-center">
-                <p className="mx-3">Sort by : <span className="font-bold">Most Upvotes</span></p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="0 0 9 7" fill="none">
-                <path d="M1 1L5 5L9 1" stroke="white" stroke-width="2"/>
-                </svg>
+                <p className="md:mx-3">Sort by : </p>
+                <button className="flex items-center">
+                    <span className="font-bold mr-3">Most Upvotes</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="0 0 9 7" fill="none">
+                    <path d="M1 1L5 5L9 1" stroke="white" stroke-width="2"/>
+                    </svg>
+                </button>
+                
             </div>
             <div className="">
                 <AddButton />
