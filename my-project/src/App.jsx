@@ -13,15 +13,30 @@ function App() {
   return (
     <>
       <div className="nav-bar md:flex lg:flex-col  ">
-        <div className="">
-        <NavBar />
+        <div className="lg:flex">
+          <div className="lg:flex-col">
+          <NavBar /> 
+           <div className="md:hidden lg:flex">
+            <NavMenu />
+            </div>      
+          </div>
+          
+          <div className="">
+            <Suggestions />
+            <Feedbacks />
+          </div>
         </div>
-        <div className="md:mt-5">
+        <div className="md:mt-5 md:flex lg:hidden">
         <NavMenu />
         </div>
+
       </div>
-      <Suggestions />
+       <div className="md:hidden">
+        <Suggestions />
+       </div>
+      <div className="md:hidden">
       <Feedbacks />
+      </div>
       
     </>
   )
