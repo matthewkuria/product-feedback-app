@@ -14,19 +14,19 @@ function App() {
     <>
       <div className="nav-bar md:flex lg:flex-col  ">
         <div className="lg:flex">
-          <div className="lg:flex-col">
+          <div className="md:flex lg:flex-col">
           <NavBar /> 
-           <div className="md:hidden lg:flex">
+           <div className="md:flex lg:flex">
             <NavMenu />
             </div>      
           </div>
-          
+
           <div className="">
             <Suggestions />
             <Feedbacks />
           </div>
         </div>
-        <div className="md:mt-5 md:flex lg:hidden">
+        <div className="md:hidden lg:hidden">
         <NavMenu />
         </div>
 
