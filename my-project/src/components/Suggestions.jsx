@@ -1,6 +1,10 @@
-import React from "react";
+import * as React from "react";
 import AddButton from "./AddFeedBackBtn";
 export default function Suggestions(){
+    const[open, setOpen] = React.useState(false)
+    function handleOpen() {
+        setOpen(!open);
+      };
     return(
         <div className="SUG flex justify-between p-5 md:rounded-lg md:mt-10 lg:mt-0 lg:ml-6 lg:w-11/12 bg-white md:w-screen ">
 
@@ -19,12 +23,22 @@ export default function Suggestions(){
             </div>
             <div className="flex items-center">
                 <p className="md:mx-3">Sort by : </p>
-                <button className="flex items-center">
+                <button onClick={handleOpen} className="flex items-center">
                     <span className="font-bold mr-3">Most Upvotes</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="0 0 9 7" fill="none">
                     <path d="M1 1L5 5L9 1" stroke="white" stroke-width="2"/>
-                    </svg>
+                    </svg>                    
                 </button>
+                {open &&
+                     <div className=" absolute top-20 right-80  w-52 h-48 z-40 bg-white font-semibold text-left text-[#647196] shadow-md p-5 rounded-lg">
+                     
+                      <option value="Most Upvotes">Most Upvotes</option>
+                      <option value="Least Upvotes">Least Upvotes</option>
+                      <option value="Most Comments">Most Comments</option>
+                      <option value="Least Comments">Least Comments</option>
+                     
+                   </div>
+                }
                 
             </div>
             <div className="">

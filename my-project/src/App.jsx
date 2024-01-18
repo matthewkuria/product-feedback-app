@@ -31,10 +31,10 @@ function App() {
         </div>
 
       </div>
-       <div className="md:hidden">
+       <div className=" hidden md:hidden">
         <Suggestions />
        </div>
-      <div className="md:hidden">
+      <div className=" hidden md:hidden">
       <Feedbacks />
       </div>
       
