@@ -30,12 +30,12 @@ export default function Suggestions(){
                     </svg>                    
                 </button>
                 {open &&
-                     <div className=" absolute top-20 right-80  w-52 h-48 z-40 bg-white font-semibold text-left text-[#647196] shadow-md p-5 rounded-lg">
+                     <div className=" absolute top-20 right-80  w-52 h-48 z-40 bg-white font-semibold text-left text-[#647196]  shadow-md p-5 rounded-lg">
                      
-                      <option value="Most Upvotes">Most Upvotes</option>
-                      <option value="Least Upvotes">Least Upvotes</option>
-                      <option value="Most Comments">Most Comments</option>
-                      <option value="Least Comments">Least Comments</option>
+                      <option  className="hover:text-[#AD1FEA] hover:font-bold border-b-2"  value="Most Upvotes">Most Upvotes</option>
+                      <option className="hover:text-[#AD1FEA] hover:font-bold border-b-2"  value="Least Upvotes">Least Upvotes</option>
+                      <option  className="hover:text-[#AD1FEA] hover:font-bold border-b-2"  value="Most Comments">Most Comments</option>
+                      <option  className="hover:text-[#AD1FEA] hover:font-bold border-b-2"  value="Least Comments">Least Comments</option>
                      
                    </div>
                 }
