@@ -2,7 +2,7 @@ import React from "react";
 import AddButton from "./AddFeedBackBtn";
 export default function Suggestions(){
     return(
-        <div className="SUG flex justify-between p-5 md:rounded-lg md:mt-10 lg:mt-0 bg-white md:w-screen lg:w-screen">
+        <div className="SUG flex justify-between p-5 md:rounded-lg md:mt-10 lg:mt-0 lg:ml-6 lg:w-11/12 bg-white md:w-screen ">
 
             <div className="md:flex hidden ">
                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24" fill="none">

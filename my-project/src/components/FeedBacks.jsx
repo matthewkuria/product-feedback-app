@@ -2,7 +2,7 @@ import React from "react";
 import AddButton from "./AddFeedBackBtn";
 export default function Feedbacks(){
     return(
-        <main className=" FEED flex-col justify-center items-center bg-white rounded-lg m-3">
+        <main className=" FEED flex-col justify-center items-center bg-white rounded-lg m-3 lg:w-11/12 ml-5">
             <div className="mx-auto mt-10 ml-36 pt-10">
                 <svg xmlns="http://www.w3.org/2000/svg" width="102" height="108" viewBox="0 0 102 108" fill="none">
                 <g opacity="0.5">
