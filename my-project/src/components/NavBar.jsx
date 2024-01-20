@@ -1,12 +1,11 @@
 import * as React from "react";
-import NavMenu from "./NavMenu"
 export default function NavBar(){
-    const [isOpen, setOpen] = React.useState(true)
+    const [isOpen, setOpen] = React.useState(false)
     function handleClick(){
         setOpen(!isOpen)
     }
     return(
-        <nav className="NAV  p-5 h-24 md:h-44 md:w-64 flex items-center justify-between md:rounded-xl ">
+        <nav className="NAV  p-5 h-24 md:h-44 md:w-64  max-w-md  flex items-center justify-between md:rounded-xl ">
             <div className="md:-mb-12 text-left">            
                 <h1 className="font-bold">Frontend Mentor</h1>
                 <p>Feedback Board</p>

@@ -1,5 +1,6 @@
 import * as React from "react";
 import AddButton from "./AddFeedBackBtn";
+import Tick from "../assets/Path 3.png"
 export default function Suggestions(){
     const[open, setOpen] = React.useState(false)
     function handleOpen() {
@@ -30,8 +31,10 @@ export default function Suggestions(){
                     </svg>                    
                 </button>
                 {open &&
-                     <div className=" absolute top-48 md:top-20 md:right-80  w-52 h-48 z-40 bg-white font-semibold text-left text-[#647196]  shadow-md p-5 rounded-lg">                     
-                      <option  className="hover:text-[#AD1FEA] hover:font-bold border-b-2 my-2"  value="Most Upvotes">Most Upvotes</option>
+                     <div className=" absolute top-48 md:top-80 lg:top-20 md:right-80  w-60 h-48 z-40 bg-white font-semibold text-left text-[#647196]  shadow-md p-5 rounded-lg">                     
+                      <option  className="hover:text-[#AD1FEA] hover:font-bold border-b-2 my-2"  value="Most Upvotes">Most Upvotes  
+                      <img src={Tick} alt="Tick image" />                   
+                      </option>
                       <option className="hover:text-[#AD1FEA] hover:font-bold border-b-2"  value="Least Upvotes">Least Upvotes</option>
                       <option  className="hover:text-[#AD1FEA] hover:font-bold border-b-2 my-2"  value="Most Comments">Most Comments</option>
                       <option  className="hover:text-[#AD1FEA] hover:font-bold border-b-2"  value="Least Comments">Least Comments</option>
