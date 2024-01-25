@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Card from './components/FeedBackCard';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import './App.css'
 import Layout from "./components/Layout"
@@ -10,6 +11,7 @@ function App() {
   return (
     <Router>
       <Layout />
+      <Card />
     </Router>
     
   )
