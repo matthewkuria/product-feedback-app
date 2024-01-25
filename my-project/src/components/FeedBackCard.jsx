@@ -1,7 +1,7 @@
 import React from "react";
 const Card = (props) =>{
     return(
-        <div className="bg-white w-full flex items-center justify-between p-5">
+        <div className="bg-white w-full flex items-center justify-between p-10 lg:w-11/12 mt-4 rounded-lg">
             <div className="">
                 <button className="bg-[#F2F4FF] hover:bg-[#CFD7FF] py-2 px-1 rounded-md flex items-center text-[#3A4374] ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
