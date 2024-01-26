@@ -1,19 +1,20 @@
-import { useState } from 'react'
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import NavMenu from './components/NavMenu';
 import Suggestions from './components/Suggestions';
 import Feedbacks from './components/FeedBacks';
 import data from "./data.json"
 import Card from './components/FeedBackCard';
+import UiComponent from './components/UIComponent';
 import './App.css'
 
-
-
+const Home = () => <div>Home</div>
+const NotFound = () => <div>404 Not Found</div>;
 function App() {
  
   const dataArray = data.productRequests
-  const feedBacks = dataArray.map((item) =>{
+  const FFeedBack = dataArray.map((item) =>{
     return(
       <Card 
         id={item.id}
@@ -43,11 +44,19 @@ function App() {
             <Suggestions />
             <Router>
               <Switch>
-                <Route path="/">
-                  {feedBacks}
-                </Route>
+                <Route path="/" component={Feedbacks} />
+                <Route path="/all" component={NotFound} />
+                <Route path="/ui" component={""} />
+                <Route path="/ux" component={""} />
+                <Route path="/enhancement" component={""} />
+                <Route path="/bug" component={""} />
+                <Route path="/feature" component={""} />
+                <Route component={NotFound} />
               </Switch>
             </Router>
+
+           
+            
         </div>
       </div>
         <div className="md:hidden lg:hidden">
