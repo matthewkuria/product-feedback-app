@@ -21,7 +21,8 @@ const Layout = () => {
             <div className="md:hidden lg:hidden">
                 <NavMenu />
             </div>
-        </div><div className=" hidden md:hidden">
+        </div>
+        <div className=" hidden md:hidden">
                 <Suggestions />
             </div><div className=" hidden md:hidden">
                 <Feedbacks />
