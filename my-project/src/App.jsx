@@ -41,11 +41,11 @@ function App() {
           </div>
         </div>
         <div className="">
-            <Suggestions />
+            <Suggestions />            
             <Router>
               <Switch>
                 <Route path="/" component={Feedbacks} />
-                <Route path="/all" component={NotFound} />
+                <Route path="/all" component={Home} />
                 <Route path="/ui" component={""} />
                 <Route path="/ux" component={""} />
                 <Route path="/enhancement" component={""} />

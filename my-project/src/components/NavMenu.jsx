@@ -4,12 +4,9 @@ export default function NavMenu(){
     return(
         <div className="MainDiv hidden md:flex  justify-between lg:flex-col">
             <div className="rounded-lg bg-white text-[#4661E6] font-bold w-1/2 h-full p-5">
-                <button className="text-white py-1 px-3 bg-[#4661E6] rounded-lg hover:bg-[#CFD7FF]">
-                  <Link to="/all">ALL</Link>
-                </button>
-                <button className="m-3 py-1 px-3 bg-[#F2F4FF] rounded-lg hover:bg-[#CFD7FF]">
-                   <Link to="/ui">UI</Link>
-                </button>
+             <Link to="/all" className="text-white py-1 px-3 bg-[#4661E6] rounded-lg hover:bg-[#CFD7FF]">ALL </Link>              
+               <Link to="/ui" className="m-3 py-1 px-3 bg-[#F2F4FF] rounded-lg hover:bg-[#CFD7FF]">UI
+                </Link>
                 <button className="mx-3 py-1 px-3 bg-[#F2F4FF] rounded-lg hover:bg-[#CFD7FF]">
                 <Link to="/ux">UX</Link>
                 </button>

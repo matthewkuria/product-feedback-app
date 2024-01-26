@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 export default function NavBar(){
     const [isOpen, setOpen] = React.useState(false)
     function handleClick(){
@@ -33,7 +34,9 @@ export default function NavBar(){
                 <div className="hamburger-menu bg-[#F7F8FD] absolute  right-0 top-24 bottom-0  z-50">
                        <div className="MainDiv  md:flex  justify-between lg:flex-col">
                             <div className="rounded-lg bg-white text-[#4661E6] font-bold w-1/2 h-full p-5">
-                                <button className="text-white py-1 px-3 bg-[#4661E6] rounded-lg hover:bg-[#CFD7FF]">All</button>
+                                <button className="text-white py-1 px-3 bg-[#4661E6] rounded-lg hover:bg-[#CFD7FF]">
+                                  <Link to="/all">ALL</Link>
+                                </button>
                                 <button className="m-3 py-1 px-3 bg-[#F2F4FF] rounded-lg hover:bg-[#CFD7FF]">UI</button>
                                 <button className="mx-3 py-1 px-3 bg-[#F2F4FF] rounded-lg hover:bg-[#CFD7FF]">UX</button>
                                 <button className="my-3  py-1 px-3 bg-[#F2F4FF] rounded-lg hover:bg-[#CFD7FF]">Enhancement</button>
