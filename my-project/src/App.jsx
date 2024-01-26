@@ -1,12 +1,11 @@
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import NavMenu from './components/NavMenu';
 import Suggestions from './components/Suggestions';
 import Feedbacks from './components/FeedBacks';
 import data from "./data.json"
 import Card from './components/FeedBackCard';
-import UiComponent from './components/UIComponent';
 import './App.css'
 
 const Home = () => <div>Home</div>
@@ -14,7 +13,7 @@ const NotFound = () => <div>404 Not Found</div>;
 function App() {
  
   const dataArray = data.productRequests
-  const FFeedBack = dataArray.map((item) =>{
+  const AllFeedBacks = dataArray.map((item) =>{
     return(
       <Card 
         id={item.id}
@@ -32,6 +31,7 @@ function App() {
 
   return (
     <div>
+      <Link to="/ui" className="text-white py-1 px-3 bg-[#4661E6] rounded-lg hover:bg-[#CFD7FF]">ALL </Link> 
     <div className="nav-bar md:flex lg:flex-col">
       <div className="lg:flex">
         <div className="md:flex lg:flex-col">
@@ -41,21 +41,20 @@ function App() {
           </div>
         </div>
         <div className="">
-            <Suggestions />            
+            <Suggestions /> 
             <Router>
               <Switch>
                 <Route path="/" component={Feedbacks} />
-                <Route path="/all" component={Home} />
-                <Route path="/ui" component={""} />
-                <Route path="/ux" component={""} />
-                <Route path="/enhancement" component={""} />
-                <Route path="/bug" component={""} />
-                <Route path="/feature" component={""} />
-                <Route component={NotFound} />
+                <Route exact path="/all" element={AllFeedBacks} />
+                <Route exact path="/ui" component={Card} />
+                <Route exact path="/ux" component={""} />
+                <Route exact path="/enhancement" component={""} />
+                <Route exact path="/bug" component={""} />
+                <Route exact path="/feature" component={""} />
+                <Route exact component={NotFound} />
               </Switch>
-            </Router>
-
-           
+            </Router>           
+            {AllFeedBacks}        
             
         </div>
       </div>
@@ -68,7 +67,7 @@ function App() {
         </div>
         <div className=" hidden md:hidden">
           <Feedbacks />          
-        </div>
+        </div>       
       </div>
    
     
