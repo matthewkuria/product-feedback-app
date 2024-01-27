@@ -8,7 +8,7 @@ export default function App() {
 
   return (
      <div className="bg-white rounded-xl">
-        <div className="">
+        <div className="absolute -top-6 left-0">
             <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
             <circle cx="28" cy="28" r="28" fill="url(#paint0_radial_0_2017)"/>
             <path d="M30.3425 36V30.1657H36.0295V25.8637H30.3425V20H25.7459V25.8637H20V30.1657H25.7459V36H30.3425Z" fill="white"/>
@@ -26,10 +26,10 @@ export default function App() {
             <h6 className="font-bold">Feedback Title</h6>
             <p className="">Add a short, descriptive headline</p>
             <form onSubmit={handleSubmit(onSubmit)}>
-            <input {...register("feedBackTitle", { required: true, maxLength: 20 })} />
+            <input {...register("feedBackTitle", { required: true, maxLength: 20 })} className="bg-[#F7F8FD]" />
             <h6 className="">Category</h6>
             <p className="">Choose a category for your feedback</p>
-            <select {...register("category")}>
+            <select {...register("category")} className="bg-[#F7F8FD] w-full" >
                 <option value="feature">Feature</option>
                 <option value="ui">UI</option>
                 <option value="ux">UX</option>
