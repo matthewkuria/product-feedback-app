@@ -13,7 +13,7 @@ export default function AddButton(){
         </button>
         {
             isActive &&
-            <div className="absolute top-0 left-0">
+            <div className="absolute  ">
                 <AddFeedBack />
             </div>
         }
