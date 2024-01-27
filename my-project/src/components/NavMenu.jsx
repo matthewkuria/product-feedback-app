@@ -2,7 +2,8 @@ import React from "react";
 import {  Link } from "react-router-dom";
 export default function NavMenu(){
     return(
-        <div className="MainDiv hidden md:flex  justify-between lg:flex-col">
+       
+            <div className="MainDiv hidden md:flex  justify-between lg:flex-col">
             <div className="rounded-lg bg-white text-[#4661E6] font-bold w-1/2 h-full p-5">
              <Link to="/all" className="text-white py-1 px-3 bg-[#4661E6] rounded-lg hover:bg-[#CFD7FF]">ALL </Link>              
                <Link to="/ui" className="m-3 py-1 px-3 bg-[#F2F4FF] rounded-lg hover:bg-[#CFD7FF]">UI
@@ -44,5 +45,6 @@ export default function NavMenu(){
             </div>         
 
         </div> 
+        
     )
 }

@@ -37,11 +37,21 @@ export default function NavBar(){
                                 <button className="text-white py-1 px-3 bg-[#4661E6] rounded-lg hover:bg-[#CFD7FF]">
                                   <Link to="/all">ALL</Link>
                                 </button>
-                                <button className="m-3 py-1 px-3 bg-[#F2F4FF] rounded-lg hover:bg-[#CFD7FF]">UI</button>
-                                <button className="mx-3 py-1 px-3 bg-[#F2F4FF] rounded-lg hover:bg-[#CFD7FF]">UX</button>
-                                <button className="my-3  py-1 px-3 bg-[#F2F4FF] rounded-lg hover:bg-[#CFD7FF]">Enhancement</button>
-                                <button className="mx-3 py-1 px-3 bg-[#F2F4FF] rounded-lg hover:bg-[#CFD7FF]">Bug</button>
-                                <button className="mx-3 py-1 px-3 bg-[#F2F4FF] rounded-lg hover:bg-[#CFD7FF]">Feature</button>
+                                <button className="m-3 py-1 px-3 bg-[#F2F4FF] rounded-lg hover:bg-[#CFD7FF]">
+                                <Link to="/ui">UI</Link>
+                                </button>
+                                <button className="mx-3 py-1 px-3 bg-[#F2F4FF] rounded-lg hover:bg-[#CFD7FF]">
+                                <Link to="/ux">UX</Link>
+                                </button>
+                                <button className="my-3  py-1 px-3 bg-[#F2F4FF] rounded-lg hover:bg-[#CFD7FF]">
+                                <Link to="/enhancement">Enhancement</Link>
+                                </button>
+                                <button className="mx-3 py-1 px-3 bg-[#F2F4FF] rounded-lg hover:bg-[#CFD7FF]">
+                                <Link to="/bug">Bug</Link>
+                                </button>
+                                <button className="mx-3 py-1 px-3 bg-[#F2F4FF] rounded-lg hover:bg-[#CFD7FF]">
+                                <Link to="/feature">Feature</Link>                                
+                                </button>
                             </div>
                             <div className="bg-white rounded-lg mx-2 mt-5 p-5">
                                 <p className="font-bold text-left text-[#3A4374]">Roadmap <span className="font-normal text-[#4661E6] ml-16"><a href="" className="hover:underline">View</a></span></p>

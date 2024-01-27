@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import NavBar from './components/NavBar';
 import NavMenu from './components/NavMenu';
 import Suggestions from './components/Suggestions';
@@ -31,7 +31,6 @@ function App() {
 
   return (
     <div>
-      <Link to="/ui" className="text-white py-1 px-3 bg-[#4661E6] rounded-lg hover:bg-[#CFD7FF]">ALL </Link> 
     <div className="nav-bar md:flex lg:flex-col">
       <div className="lg:flex">
         <div className="md:flex lg:flex-col">
@@ -42,19 +41,22 @@ function App() {
         </div>
         <div className="">
             <Suggestions /> 
-            <Router>
-              <Switch>
-                <Route path="/" component={Feedbacks} />
+            <Routes>
+              
+                <Route  path="/" element={<Feedbacks /> } />
                 <Route exact path="/all" element={AllFeedBacks} />
-                <Route exact path="/ui" component={Card} />
-                <Route exact path="/ux" component={""} />
+                <Route exact path="/ui" element={<Card />} />
+                <Route exact path="/ux" element={<Home />} />
                 <Route exact path="/enhancement" component={""} />
                 <Route exact path="/bug" component={""} />
                 <Route exact path="/feature" component={""} />
                 <Route exact component={NotFound} />
-              </Switch>
-            </Router>           
-            {AllFeedBacks}        
+            </Routes>
+           
+             
+              
+                     
+                
             
         </div>
       </div>
