@@ -8,8 +8,12 @@ import data from "./data.json"
 import Card from './components/FeedBackCard';
 import './App.css'
 
-const Home = () => <div>Home</div>
-const NotFound = () => <div>404 Not Found</div>;
+const Ui = () => <div className='text-3xl md:w-11/12'>UI Goes Here</div>
+const Ux = () => <div className='text-3xl'>UX Goes Here!</div>
+const Enhancement = () => <div className='text-3xl'>Enhancement Component Goes Here</div>
+const Bug = () => <div className='text-3xl'>Bug Suggestions Goes Here</div>
+const Feature = () => <div className='text-3xl'>Feature tag Goes Here</div>
+const NotFound = () => <div className='font-bold text-5xl'>404 Not Found</div>;
 function App() {
  
   const dataArray = data.productRequests
@@ -45,12 +49,12 @@ function App() {
               
                 <Route  path="/" element={<Feedbacks /> } />
                 <Route exact path="/all" element={AllFeedBacks} />
-                <Route exact path="/ui" element={<Card />} />
-                <Route exact path="/ux" element={<Home />} />
-                <Route exact path="/enhancement" component={""} />
-                <Route exact path="/bug" component={""} />
-                <Route exact path="/feature" component={""} />
-                <Route exact component={NotFound} />
+                <Route exact path="/ui" element={<Ui />} />
+                <Route exact path="/ux" element={<Ux />} />
+                <Route exact path="/enhancement" element={<Enhancement />} />
+                <Route exact path="/bug" element={<Bug />} />
+                <Route exact path="/feature" element={<Feature />} />
+                <Route exact path='*' element={<NotFound />} />
             </Routes>
            
              
