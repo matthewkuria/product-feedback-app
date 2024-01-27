@@ -1,11 +1,22 @@
-import React from "react";
+import {React, useState} from "react";
 import AddFeedBack from "./AddFeedBack";
 export default function AddButton(){
+    const [isActive , setActive] = useState(false)
+    function handleClick(){
+        setActive(!isActive)
+
+    }
     return(
         <>
-        <button className="BTN w-36 h-10 text-white hover:bg-[#C75AF6]">
+        <button onClick={handleClick} className="BTN w-36 h-10 text-white hover:bg-[#C75AF6]">
                 + Add Feedback
         </button>
+        {
+            isActive &&
+            <div className="absolute top-0 left-0">
+                <AddFeedBack />
+            </div>
+        }
         </>
     )
 }
