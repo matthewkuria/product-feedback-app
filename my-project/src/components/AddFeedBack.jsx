@@ -4,7 +4,7 @@ import { useForm, Controller } from "react-hook-form"
 export default function App() {
   const { register, control, handleSubmit } = useForm({
     defaultValues:{
-        feedBackTitle:"Enter a Title",
+        feedBackTitle:"",
 
     }
   })
@@ -31,7 +31,7 @@ export default function App() {
             <h6 className="font-bold">Feedback Title</h6>
             <p className="">Add a short, descriptive headline</p>
             <form onSubmit={handleSubmit(onSubmit)}>
-            <input {...register("feedBackTitle", { required: true, maxLength: 20 })} className="bg-[#F7F8FD]" />
+            <input {...register("feedBackTitle", { required: true, maxLength: 20 })} className="bg-[#F7F8FD]" placeholder="Enter Title" />
             <h6 className="">Category</h6>
             <p className="">Choose a category for your feedback</p>
             <select {...register("category")} className="bg-[#F7F8FD] w-full" >
