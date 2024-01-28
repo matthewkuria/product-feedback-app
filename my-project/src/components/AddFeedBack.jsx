@@ -7,7 +7,7 @@ export default function App() {
 
 
   return (
-     <div className="bg-white rounded-xl">
+     <div className="bg-white rounded-xl p-5">
         <div className="absolute -top-6 left-0">
             <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
             <circle cx="28" cy="28" r="28" fill="url(#paint0_radial_0_2017)"/>
@@ -38,7 +38,7 @@ export default function App() {
             </select>
             <h6 className="">Feedback Detail</h6>
             <p className="">Include any specific comments on what should be improved, added, etc.</p>
-             <div className="btns mt-4 flex justify-end">
+             <div className="btns my-5 flex justify-end">
                 <button className="bg-[#3A4374] hover:bg-[#656EA3] text-white rounded-md py-1 px-3 mx-4" onClick={""} > Cancel</button>
                 <button type="submit" className="bg-[#AD1FEA] hover:bg-[#C75AF6] text-white  rounded-md py-1 px-3 ">Add FeedBack </button>
              </div>
