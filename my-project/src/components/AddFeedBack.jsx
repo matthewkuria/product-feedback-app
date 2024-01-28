@@ -2,7 +2,12 @@ import { useForm, Controller } from "react-hook-form"
 
 
 export default function App() {
-  const { register, control, handleSubmit } = useForm()
+  const { register, control, handleSubmit } = useForm({
+    defaultValues:{
+        feedBackTitle:"Enter a Title",
+
+    }
+  })
   const onSubmit = (data) => console.log(data)
 
 
