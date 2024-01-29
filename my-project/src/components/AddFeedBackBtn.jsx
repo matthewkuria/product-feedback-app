@@ -14,7 +14,7 @@ export default function AddButton(){
         {
             isActive &&
             <div className=" absolute top-0 left-0 bg-black  right-0 bottom-0  ">
-                <div className="flex justify-center mt-10">
+                <div className="flex justify-center mt-10 w-[768px] mx-auto">
                 <AddFeedBack />
                 </div>
             </div>
