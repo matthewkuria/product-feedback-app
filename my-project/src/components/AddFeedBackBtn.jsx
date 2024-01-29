@@ -13,8 +13,8 @@ export default function AddButton(){
         </button>
         {
             isActive &&
-            <div className=" absolute top-0 left-0 bg-black  right-0 bottom-0  ">
-                <div className="flex justify-center mt-10 w-[768px] mx-auto">
+            <div className=" absolute top-0 left-0 bg-[#F7F8FD]  right-0 bottom-0  ">
+                <div className="flex justify-center mt-10 md:w-[768px] mx-auto">
                 <AddFeedBack />
                 </div>
             </div>
