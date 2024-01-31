@@ -6,6 +6,7 @@ import Suggestions from './components/Suggestions';
 import Feedbacks from './components/FeedBacks';
 import data from "./data.json"
 import Card from './components/FeedBackCard';
+import Layout from  "./components/Layout"
 import './App.css'
 
 const Ui = () => <div className='text-3xl md:w-11/12'>UI Goes Here</div>
@@ -47,7 +48,7 @@ function App() {
             <Suggestions /> 
             <Routes>
               
-                <Route  path="/" element={<Feedbacks /> } />
+                <Route exact  path="/" element={<Feedbacks />} />
                 <Route exact path="/all" element={AllFeedBacks} />
                 <Route exact path="/ui" element={<Ui />} />
                 <Route exact path="/ux" element={<Ux />} />
