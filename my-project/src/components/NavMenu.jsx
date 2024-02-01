@@ -22,7 +22,7 @@ export default function NavMenu(){
                 </button>
             </div>
             <div className="bg-white rounded-lg mx-2 lg:mx-0 md:mt-5 p-5">
-                <p className="font-bold text-left text-[#3A4374]">Roadmap <span className="font-normal text-[#4661E6] ml-16"><Link to="" className="hover:underline">View</Link></span></p>
+                <p className="font-bold text-left text-[#3A4374]">Roadmap <span className="font-normal text-[#4661E6] ml-16"><Link to="/roadmap" className="hover:underline">View</Link></span></p>
                 <div className="flex items-center  pt-5">
                 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
                 <circle cx="4" cy="4" r="4" fill="#F49F85"/>

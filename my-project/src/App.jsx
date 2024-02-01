@@ -7,6 +7,7 @@ import Feedbacks from './components/FeedBacks';
 import data from "./data.json"
 import Card from './components/FeedBackCard';
 import Layout from  "./components/Layout"
+import RoadMap from './components/RoadMap';
 import './App.css'
 
 const Ui = () => <div className='text-3xl md:w-11/12'>UI Goes Here</div>
@@ -55,6 +56,7 @@ function App() {
                 <Route exact path="/enhancement" element={<Enhancement />} />
                 <Route exact path="/bug" element={<Bug />} />
                 <Route exact path="/feature" element={<Feature />} />
+                <Route exact path='/roadmap' element={<RoadMap />} />
                 <Route exact path='*' element={<NotFound />} />
             </Routes>
            
