@@ -7,14 +7,14 @@ const Card = (props) =>{
                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
                     <path d="M1.33447 6L5.33447 2L9.33447 6" stroke="#4661E6" stroke-width="3"/>
                     </svg>
-                   <h5 className="mx-2 font-bold">{props.upvotes}</h5>
+                   <h5 className="mx-2 font-bold">{props.item.upvotes}</h5>
                 </button>
             </div>
             <div className="text-left">
-                <h3 className="text-[#3A4374] text-xl font-bold">{props.title}</h3>
-                <p className="text-[#647196] text-xl">{props.desc}</p>
+                <h3 className="text-[#3A4374] text-xl font-bold">{props.item.title}</h3>
+                <p className="text-[#647196] text-xl">{props.item.desc}</p>
                 <button className="bg-[#F2F4FF] hover:bg-[#CFD7FF] text-[#4661E6]  font-bold py-1 px-3 rounded-md ">
-                {props.category}
+                {props.item.category}
                 </button>
             </div>
             <div className="flex items-center">

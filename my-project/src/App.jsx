@@ -23,12 +23,7 @@ function App() {
     return(
       <Card 
         id={item.id}
-        title={item.title}
-        desc={item.description}
-        category={item.category}
-        upvotes={item.upvotes}
-        status={item.status}
-        comments={item.comments}
+        item={item}
 
       />
     )
