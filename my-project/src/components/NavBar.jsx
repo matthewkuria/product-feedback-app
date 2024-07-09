@@ -6,7 +6,7 @@ export default function NavBar(){
         setOpen(!isOpen)
     }
     return(
-        <nav className="NAV  p-5 h-24 md:h-44 md:w-64  max-w-md  flex items-center justify-between md:rounded-xl ">
+        <nav className="navbar p-5 h-24 md:h-44 md:w-64  max-w-md  flex items-center justify-between md:rounded-xl ">
             <div className="md:-mb-12 text-left">            
                 <h1 className="font-bold">Frontend Mentor</h1>
                 <p>Feedback Board</p>
